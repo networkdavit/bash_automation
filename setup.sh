@@ -42,6 +42,19 @@ sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://b
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt update
 sudo apt install brave-browser -y
+echo "Telling git who I am"
+git config --global user.name "networkdavit"
+git config --global user.email "lonecreation1612@gmail.com"
+sleep 1
+echo "Cloning github repos"
+git clone https://github.com/networkdavit/nobitour.git
+sleep 1
+git clone https://github.com/networkdavit/dasecure
+sleep 1
+echo "Downloading Private Internet Access"
+wget https://installers.privateinternetaccess.com/download/pia-linux-3.3.1-06924.run
+sh pia-linux-3.3.1-06924.run
+
 
 
 
