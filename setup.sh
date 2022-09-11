@@ -70,10 +70,10 @@ sudo apt install ruby -y
 echo "Installing wpscan"
 sleep 1
 sudo apt install build-essential libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev  libgmp-dev zlib1g-dev
-sudo gem install wpscan
+sudo gem install wpscan -y
 echo "Installing sqlmap"
 sleep 1
-sudo apt install sqlmap
+sudo apt install sqlmap -y
 echo "Installing aircrack-ng"
 sudo apt-get install -y aircrack-ng -y
 sleep 1
