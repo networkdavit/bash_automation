@@ -47,6 +47,7 @@ git config --global user.name "networkdavit"
 git config --global user.email "lonecreation1612@gmail.com"
 sleep 1
 echo "Cloning github repos"
+git config credential.helper store
 git clone https://github.com/networkdavit/nobitour.git
 sleep 1
 git clone https://github.com/networkdavit/dasecure
