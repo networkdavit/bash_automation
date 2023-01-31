@@ -50,8 +50,6 @@ echo "Cloning github repos"
 git config credential.helper store
 git clone https://github.com/networkdavit/nobitour.git
 sleep 1
-git clone https://github.com/networkdavit/dasecure
-sleep 1
 echo "Downloading Private Internet Access"
 wget https://installers.privateinternetaccess.com/download/pia-linux-3.3.1-06924.run
 sh pia-linux-3.3.1-06924.run
@@ -71,18 +69,42 @@ echo "Installing wpscan"
 sleep 1
 sudo apt install build-essential libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev  libgmp-dev zlib1g-dev
 sudo gem install wpscan -y
+
+echo "Installing httprobe"
+sleep 1
+sudo apt install httprobe
+
 echo "Installing sqlmap"
 sleep 1
 sudo apt install sqlmap -y
 echo "Installing aircrack-ng"
 sudo apt-get install -y aircrack-ng -y
 sleep 1
+
+echo "Make dir for bug bounty"
+sleep 1
+mkdir bugbounty
+cd bugbounty
+
 echo "Downloading knockpy"
 sleep 1
 git clone https://github.com/guelfoweb/knock.git
 cd knock
 pip3 install -r requirements.txt
 cd ..
+
+echo "Downloading seclists"
+sleep 1
+git clone https://github.com/maurosoria/dirsearch.git
+
+echo "Downloading dirsearch"
+sleep 1
+https://github.com/maurosoria/dirsearch.git
+
+echo "Downloading sublist3r"
+sleep 1
+git clone https://github.com/aboul3la/Sublist3r.git
+
 echo "Downloading searchsploit"
 sleep 1
 git clone https://github.com/offensive-security/exploitdb.git /opt/exploit-database
