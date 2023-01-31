@@ -1,6 +1,15 @@
 #!/usr/bin/env bash
 echo "Updating repositories"
-sudo apt-get update
+sudo apt-get update && sudo apt upgrade
+
+echo "Installing snapd"
+sleep 1
+sudo apt install snapd
+
+echo "Installing discord"
+sleep 1
+sudo snap install discord
+
 echo "Installing curl"
 sleep 1
 sudo apt install curl -y
