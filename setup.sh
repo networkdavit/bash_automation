@@ -8,7 +8,7 @@ sudo apt install snapd -y
 
 echo "Installing discord"
 sleep 1
-sudo snap install discord
+sudo snap install discord -y
 
 echo "Installing curl"
 sleep 1
@@ -21,7 +21,7 @@ sleep 1
 sudo apt install hashcat -y
 echo "Installing vscode"
 sleep 1
-sudo snap install --classic code
+sudo snap install --classic code -y
 echo "Installing python3-pip"
 sleep 1
 sudo apt install python3-pip -y
@@ -63,11 +63,11 @@ git config credential.helper store
 git clone https://github.com/networkdavit/nobitour.git
 sleep 1
 echo "Installing insomnia"
-sudo snap install insomnia
+sudo snap install insomnia -y
 sleep 1
 
 echo "Installing whatsapp"
-sudo snap install whatsapp-for-linux
+sudo snap install whatsapp-for-linux -y
 sleep 1
 
 echo "Installing telegram"
@@ -82,7 +82,7 @@ sudo apt install sqlitebrowser -y
 sleep 1
 
 echo "Installing PostgeSQL"
-sudo apt install postgresql postgresql-client y
+sudo apt install postgresql postgresql-client -y
 sleep 1
 
 echo "Installing pgadmin"
