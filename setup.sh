@@ -4,7 +4,7 @@ sudo apt-get update && sudo apt upgrade
 
 echo "Installing snapd"
 sleep 1
-sudo apt install snapd
+sudo apt install snapd -y
 
 echo "Installing discord"
 sleep 1
@@ -34,6 +34,9 @@ sudo apt-get install virtualbox -y
 echo "Installing terminator"
 sleep 1
 sudo apt install terminator -y
+echo "Installing docker"
+sleep 1 
+sudo apt-get install docker.io -y
 echo "Installing sublime text"
 sleep 1
 sudo apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common -y
@@ -108,7 +111,7 @@ sudo gem install wpscan -y
 
 echo "Installing httprobe"
 sleep 1
-sudo apt install httprobe
+sudo apt install httprobe -y
 
 echo "Installing sqlmap"
 sleep 1
