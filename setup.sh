@@ -106,7 +106,7 @@ sleep 1
 sudo apt install ruby -y
 echo "Installing wpscan"
 sleep 1
-sudo apt install build-essential libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev  libgmp-dev zlib1g-dev
+sudo apt install build-essential libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev  libgmp-dev zlib1g-dev -y
 sudo gem install wpscan -y
 
 echo "Installing httprobe"
