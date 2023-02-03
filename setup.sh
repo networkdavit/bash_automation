@@ -59,6 +59,33 @@ echo "Cloning github repos"
 git config credential.helper store
 git clone https://github.com/networkdavit/nobitour.git
 sleep 1
+echo "Installing insomnia"
+sudo snap install insomnia
+sleep 1
+
+echo "Installing whatsapp"
+sudo snap install whatsapp-for-linux
+sleep 1
+
+echo "Installing telegram"
+sudo apt install telegram-desktop -y
+sleep 1
+
+echo "Installing sqlite3"
+sudo apt install sqlite3 -y
+sleep 1
+echo "Installing db browser for sqlite3"
+sudo apt install sqlitebrowser -y
+sleep 1
+
+echo "Installing PostgeSQL"
+sudo apt install postgresql postgresql-client y
+sleep 1
+
+echo "Installing pgadmin"
+sudo apt install pgadmin4 -y
+sleep 1
+
 echo "Downloading Private Internet Access"
 wget https://installers.privateinternetaccess.com/download/pia-linux-3.3.1-06924.run
 sh pia-linux-3.3.1-06924.run
